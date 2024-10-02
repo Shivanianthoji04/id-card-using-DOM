@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="h1"></div>
+    <script>
+
+       
+        let div1=document.createElement("div");
+        document.body.appendChild(div1);
+        div1.style.border="2px solid black";
+        div1.style.width="250px";
+        div1.style.display="flex";
+        div1.style.flexDirection="column";
+        div1.style.alignItems="center";
+        div1.style.padding="20px";
+        div1.style.height="450px";
+        div1.style.backgroundColor="skyblue"
+        div1.style.boxShadow="10px,10px"
+        let y=document.createElement("h1")
+        y.innerHTML="ID CARD";
+        div1.appendChild(y)
+        let ph=document.createElement("img");
+        div1.appendChild(ph);
+        // ph.backgroundImage("src","./bgimage.jpg")
+        // ph.style.height="50px"
+        ph.setAttribute("src","./profile.jpg");
+        ph.style.width="60%";
+        ph.style.height="60%";
+        let name=document.createElement("h3");
+        div1.appendChild(name);
+        name.innerHTML="NAME:A.SHIVANI";
+
+        let ag=document.createElement("p");
+        div1.appendChild(ag);
+        ag.innerHTML="INSTITUTE:10000 CODERS";
+        
+        let cg=document.createElement("p");
+        div1.appendChild(cg);
+        cg.innerHTML="BATCH-14R";
+
+        let bg=document.createElement("p");
+        div1.appendChild(bg);
+        bg.innerHTML="FEILD:FULL STACK DEVELOPER";
+        
+
+    
+    </script>
+</body>
+</html>
